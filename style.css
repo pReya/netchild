@@ -24,12 +24,19 @@ ul li {
   display: inline;
 }
 
+ul li:last-child::before {
+  content: "- ";
+}
+
 a {
   color: white;
+}
+
+.column a {
   text-decoration: wavy underline;
 }
 
-a:hover {
+.column a:hover {
   text-decoration: wavy underline;
 }
 
