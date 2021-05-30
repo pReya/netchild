@@ -1,0 +1,102 @@
+
+
+/* Color palette: https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557 */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+nav {
+  font-weight: 300;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+}
+
+ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+ul li {
+  display: inline;
+}
+
+a {
+  color: white;
+  text-decoration: wavy underline;
+}
+
+a:hover {
+  text-decoration: wavy underline;
+}
+
+h2 {
+  line-height: 1.3em;
+  font-family: "Open Sans Condensed";
+  font-weight: 300;
+}
+
+h2 strong {
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  height: 100%;
+}
+
+.column {
+  flex: 1;
+  padding: 1.5em;
+}
+
+.red {
+  background-color: rgb(230, 57, 70);
+  background-color: #e63946;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23000000' fill-opacity='0.1' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.blue {
+  background-color: rgb(69, 123, 157);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%23000000' fill-opacity='0.1' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.dark-blue {
+  background-color: rgb(29, 53, 87);
+  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23000000' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+
+section div {
+  position: relative;
+  top: 60%;
+  transition: top 0.8s;
+}
+
+section:hover div {
+  top: 30%;
+}
+
+section p {
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+section:hover p {
+  opacity: 1;
+}
+
+.intro {
+  font-weight: 300;
+  font-size: 1.2em;
+  font-family: "Open Sans Condensed";
+  color: rgba(255,255,255,0.7);
+}
