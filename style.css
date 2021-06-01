@@ -111,3 +111,29 @@ h2 strong {
   font-family: "Open Sans Condensed";
   color: rgba(255, 255, 255, 0.7);
 }
+
+.emoji {
+  height: 0.9em;
+  width: 0.9em;
+}
+
+.backdrop {
+  background-color: hsla(0,0%,0%,0.6);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal {
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);
+  margin: 0 auto;
+  background-color: white;
+  padding: 2em;
+  color: black;
+}
