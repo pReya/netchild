@@ -4,35 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>netchild.de | Moritz Stückler</title>
+    <meta name="description" content="Moritz Stückler is a software developer, a technology communicator and a maker."/>
+    <meta name="keywords" content="Moritz Stückler, Moritz Stueckler, netchild, Maker, Software Developer"/>
+    <meta name="robots" content="index"/>
+    <title>netchild.de | 🧔🏻 Moritz Stückler | Developer, Communicator, Maker</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@300;700&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
-      defer
-    ></script>
   </head>
-  <body x-data="{ open: false }">
-    <div x-show="open" @click.away="open = false" class="backdrop">
-      <div class="modal">
-        <h3>Legal notice</h3>
-        <p>Responsible for this page:</p>
-        <p>
-          Moritz Stückler<br />
-          Richardstr. 62<br />
-          22089 Hamburg
-        </p>
-      </div>
-    </div>
+  <body>
     <div class="container">
       <nav>
         <ul>
-          <li @click="open = true">Legal notice</li>
-          <li><a href="http://www.google.de/">Contact</a></li>
+          <li>
+            <a href="mailto:hello(ätt)netchild.de">
+              <svg xmlns="http://www.w3.org/2000/svg" role="img" width="24" height="24" viewBox="2 4 16 12" fill="currentColor">
+                <title>E-Mail</title>
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/moritz-stueckler-software-developer/" target="_blank" rel="noopener noreferrer">
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                <title>LinkedIn</title>
+                <path fill-rule="evenodd" d="M0 18.338C0 8.216 8.474 0 18.92 0h218.16C247.53 0 256 8.216 256 18.338v219.327C256 247.79 247.53 256 237.08 256H18.92C8.475 256 0 247.791 0 237.668V18.335z M77.796 214.238V98.986H39.488v115.252H77.8zM58.65 83.253c13.356 0 21.671-8.85 21.671-19.91-.25-11.312-8.315-19.915-21.417-19.915-13.111 0-21.674 8.603-21.674 19.914 0 11.06 8.312 19.91 21.169 19.91h.248zM99 214.238h38.305v-64.355c0-3.44.25-6.889 1.262-9.346 2.768-6.885 9.071-14.012 19.656-14.012 13.858 0 19.405 10.568 19.405 26.063v61.65h38.304v-66.082c0-35.399-18.896-51.872-44.099-51.872-20.663 0-29.738 11.549-34.78 19.415h.255V98.99H99.002c.5 10.812-.003 115.252-.003 115.252z" fill="currentColor"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.github.com/preya/" target="_blank" rel="noopener noreferrer">
+              <svg role="img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                <title>GitHub</title>
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/MoStueck" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <title>Twitter</title>
+                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+              </svg>
+            </a>
+          </li>
         </ul>
       </nav>
       <section class="column red">
@@ -48,10 +67,10 @@
             I built my first website when I was around 13. Since then I've been
             constantly dabbling with code. In 2019, I got my Bachelor's degree
             in Technical Computer Science (Technische Informatik) at
-            <a href="https://www.haw-hamburg.de/">HAW Hamburg</a> and I've been
+            <a href="https://www.haw-hamburg.de/" target="_blank" rel="noopener noreferrer">HAW Hamburg</a> and I've been
             working as a software developer since then. Currently I mostly build
             frontend applications using React at my employer
-            <a href="https://www.elbstack.com/">Elbstack</a>.
+            <a href="https://www.elbstack.com/" target="_blank" rel="noopener noreferrer">Elbstack</a>.
           </p>
         </div>
       </section>
@@ -72,7 +91,7 @@
             (Volontariat). I've visited trade shows and press conferences all
             over the world and spent a year living and working in Silicon Valley
             as a correspondent for
-            <a href="https://www.t3n.de/">t3n Magazin</a>. Sometimes I still
+            <a href="https://www.t3n.de/" target="_blank" rel="noopener noreferrer">t3n Magazin</a>. Sometimes I still
             write as a freelancer for various publications.
           </p>
         </div>
@@ -90,10 +109,9 @@
             but also non-technical and simple things from wood and metal, like
             furniture. Building things is more fun if you don't do it alone –
             that's why I'm spending most of my free time helping to establish
-            <a href="https://www.welcome-werkstatt.de/"
-              >Welcome Werkstatt e. V.</a
+            <a href="https://www.welcome-werkstatt.de/" target="_blank" rel="noopener noreferrer">Welcome Werkstatt e. V.</a
             >
-            – a club for likeminded people, who maintain an open works- and
+            – a club for likeminded people, who maintain an open workshop and
             makerspace in Hamburg Barmbek.
           </p>
         </div>
