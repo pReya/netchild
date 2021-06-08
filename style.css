@@ -32,10 +32,12 @@ a {
 
 .column a {
   text-decoration: wavy underline;
+  -webkit-text-decoration: wavy underline;
 }
 
 .column a:hover {
   text-decoration: wavy underline;
+  -webkit-text-decoration: wavy underline;
 }
 
 h2 {
