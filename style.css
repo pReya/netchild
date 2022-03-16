@@ -10,7 +10,7 @@ body {
 
 nav {
   font-weight: 300;
-  padding: 25px;
+  padding: 3em;
   position: absolute;
   right: 0;
 }
@@ -86,7 +86,7 @@ h2 strong {
 
 .column {
   flex: 1;
-  padding: 1.5em;
+  padding: 3em;
 }
 
 .red {
